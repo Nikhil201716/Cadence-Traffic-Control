@@ -58,8 +58,16 @@ offsets.
 ## Reproducibility
 
 Everything is seeded (`SEED = 20260911`), and the traffic model is a
-deterministic queue simulation, so every number reproduces exactly on any
-machine. The genetic algorithm is seeded too, so even the heuristic's path is
+deterministic queue simulation, so every number in the reports reproduces
+exactly on any machine — the `reports/*.json` are byte-for-byte identical run to
+run. The genetic algorithm is seeded too, so even the heuristic's path is
 identical run to run. The directions of the findings are robust; the exact
 percentages depend on the seeded demand profiles, which the reports record in
 full.
+
+The one thing that is *not* reproducible — wall-clock time — is deliberately
+kept out of the reports. `run.py` prints how long the grid search and the GA
+took (machine-dependent), but writes neither into `offsets.json`, so the report
+stays bit-reproducible. The time-to-solution finding is carried instead by the
+simulation **count** (`evaluations`), which is deterministic: 177 for the GA
+versus 1,728 for the exhaustive grid.

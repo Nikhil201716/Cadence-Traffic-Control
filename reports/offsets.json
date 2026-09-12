@@ -18,8 +18,7 @@
       45
     ],
     "best_delay": 24480.3,
-    "evaluations": 1728,
-    "seconds": 9.16
+    "evaluations": 1728
   },
   "genetic_algorithm": {
     "method": "genetic_algorithm",
@@ -33,8 +32,7 @@
     "evaluations": 177,
     "converged_generation": 17,
     "population": 20,
-    "generations": 25,
-    "seconds": 0.86
+    "generations": 25
   },
   "ga_matched_grid_optimum": true,
   "ga_evaluation_saving": 0.898,

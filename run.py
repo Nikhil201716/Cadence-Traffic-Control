@@ -84,13 +84,19 @@ def run_offsets() -> None:
     n, cycle, step = 4, 60, 5
     fixed_delay = objective([0] * n)
 
+    # Wall-clock timing is printed for whoever runs this, but deliberately NOT
+    # written into the report: it is machine-dependent and would break the
+    # report's exact reproducibility. The time-to-solution finding is carried by
+    # the simulation COUNT (evaluations), which is deterministic.
     t = time.perf_counter()
     grid = gridsearch.search(objective, n, cycle, step)
-    grid["seconds"] = round(time.perf_counter() - t, 2)
+    grid_seconds = round(time.perf_counter() - t, 2)
 
     t = time.perf_counter()
     ga = genetic.optimise(objective, n, cycle, step, seed=SEED)
-    ga["seconds"] = round(time.perf_counter() - t, 2)
+    ga_seconds = round(time.perf_counter() - t, 2)
+    print(f"    grid search {grid['evaluations']} sims in {grid_seconds}s; "
+          f"GA {ga['evaluations']} sims in {ga_seconds}s (wall-clock, not persisted)")
 
     matched = ga["best_delay"] <= grid["best_delay"] * 1.001
 
