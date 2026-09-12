@@ -1,0 +1,18 @@
+{
+  "linearly_separable": {
+    "perceptron": {
+      "converged_epoch": 4,
+      "final_accuracy": 1.0
+    },
+    "adaline": {
+      "final_mse": 0.1518,
+      "final_accuracy": 0.995
+    }
+  },
+  "xor": {
+    "perceptron_accuracy": 0.25,
+    "perceptron_converged": false,
+    "adaline_accuracy": 0.25,
+    "note": "Neither single-layer unit can solve XOR - no line separates it."
+  }
+}

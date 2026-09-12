@@ -1,0 +1,49 @@
+{
+  "network": {
+    "intersections": 4,
+    "cycle": 60,
+    "offset_step": 5,
+    "arterial_green": 30,
+    "travel_time": 15,
+    "inflow": 0.5,
+    "cross_inflow": 0.15
+  },
+  "fixed_zero_offsets_delay": 44289.5,
+  "grid_search": {
+    "method": "grid_search",
+    "best_offsets": [
+      0,
+      15,
+      30,
+      45
+    ],
+    "best_delay": 24480.3,
+    "evaluations": 1728,
+    "seconds": 9.16
+  },
+  "genetic_algorithm": {
+    "method": "genetic_algorithm",
+    "best_offsets": [
+      0,
+      15,
+      30,
+      45
+    ],
+    "best_delay": 24480.3,
+    "evaluations": 177,
+    "converged_generation": 17,
+    "population": 20,
+    "generations": 25,
+    "seconds": 0.86
+  },
+  "ga_matched_grid_optimum": true,
+  "ga_evaluation_saving": 0.898,
+  "scaling": {
+    "intersections": 6,
+    "grid_points_that_would_be_needed": 248832,
+    "ga_evaluations_used": 825,
+    "ga_delay": 20151.4,
+    "fixed_delay": 41872.9,
+    "note": "An exhaustive grid at this size is 248,832 simulations; the GA used 825."
+  }
+}

@@ -1,0 +1,13 @@
+# Reproducible from source; never committed.
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Reports ARE committed - they are the evidence behind every number in the
+# README and the notebook. The notebook PDF is committed; build intermediates
+# are not.
+docs/*.html
+
+.idea/
+.vscode/
+.DS_Store

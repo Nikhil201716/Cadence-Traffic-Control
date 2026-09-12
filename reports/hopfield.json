@@ -1,0 +1,79 @@
+{
+  "network_size": 64,
+  "theoretical_capacity_ratio": 0.138,
+  "recovery_curve": [
+    {
+      "flipped_bits": 0,
+      "fraction_of_bits": 0.0,
+      "exact_recovery_rate": 1.0
+    },
+    {
+      "flipped_bits": 5,
+      "fraction_of_bits": 0.078,
+      "exact_recovery_rate": 1.0
+    },
+    {
+      "flipped_bits": 10,
+      "fraction_of_bits": 0.156,
+      "exact_recovery_rate": 1.0
+    },
+    {
+      "flipped_bits": 15,
+      "fraction_of_bits": 0.234,
+      "exact_recovery_rate": 1.0
+    },
+    {
+      "flipped_bits": 20,
+      "fraction_of_bits": 0.312,
+      "exact_recovery_rate": 0.945
+    },
+    {
+      "flipped_bits": 25,
+      "fraction_of_bits": 0.391,
+      "exact_recovery_rate": 0.735
+    },
+    {
+      "flipped_bits": 30,
+      "fraction_of_bits": 0.469,
+      "exact_recovery_rate": 0.115
+    }
+  ],
+  "capacity_curve": [
+    {
+      "stored_patterns": 1,
+      "load_ratio": 0.016,
+      "recovery_rate": 1.0
+    },
+    {
+      "stored_patterns": 4,
+      "load_ratio": 0.062,
+      "recovery_rate": 1.0
+    },
+    {
+      "stored_patterns": 7,
+      "load_ratio": 0.109,
+      "recovery_rate": 1.0
+    },
+    {
+      "stored_patterns": 10,
+      "load_ratio": 0.156,
+      "recovery_rate": 0.765
+    },
+    {
+      "stored_patterns": 13,
+      "load_ratio": 0.203,
+      "recovery_rate": 0.775
+    },
+    {
+      "stored_patterns": 16,
+      "load_ratio": 0.25,
+      "recovery_rate": 0.445
+    },
+    {
+      "stored_patterns": 19,
+      "load_ratio": 0.297,
+      "recovery_rate": 0.07
+    }
+  ],
+  "measured_capacity_cliff_ratio": 0.156
+}

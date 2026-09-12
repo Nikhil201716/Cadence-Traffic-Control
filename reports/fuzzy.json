@@ -1,0 +1,28 @@
+{
+  "demand_profile": "main-street-heavy then cross-street-heavy",
+  "fixed_green_sweep": {
+    "10": 23470.0,
+    "15": 13565.0,
+    "20": 11092.0,
+    "25": 9392.0,
+    "30": 10663.0,
+    "35": 11032.0,
+    "40": 12155.0,
+    "45": 12071.0,
+    "50": 12944.0
+  },
+  "best_fixed_green": 25,
+  "best_fixed_delay": 9392.0,
+  "fuzzy": {
+    "total_delay": 3917.0,
+    "avg_delay": 10.227,
+    "max_queue": 12.0,
+    "vehicles_served": 383.0
+  },
+  "delay_reduction_vs_best_fixed": 0.5829,
+  "sample_rules": {
+    "my_long_other_short": 45.0,
+    "my_short_other_long": 10.0,
+    "both_medium": 25.0
+  }
+}
